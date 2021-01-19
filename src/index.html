@@ -4,9 +4,68 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/8699ef02e6.js" crossorigin="anonymous"></script>
+    
+  <nav>
+    <a class="navbar-logo" href="index.html">
+      <img src="logo rickmorty.png">
+    </a>
+    <div id="icon-list"> <i class="fas fa-list-ul"></i> </div>
+    
+      <div>
+        <input type="search" class="search-input" placeholder="Buscar...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+  </nav>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="body-1">
+
+<!--     <div id="root">
+    </div> -->
+    <select name="select-order">
+      <option value="value0" selected>Ordenar por</option>
+      <option value="value1">A-Z</option>
+      <option value="value2">Z-A</option>
+    </select>
+
+<!--     <div class="dropdown">
+      <span>Estado de vida</span>
+      <div class="dropdown-content">
+      <p>Vivo</p>
+      <p>Muerto</p>
+      </div>
+    </div> -->
+
+    <aside>
+      <li> Categorias</li>      
+      <ul>
+       <li class="dropdown">Estado de Vida </li>  
+        <ul>
+          <li>Vivo</li>
+          <li>Muerto</li>
+        </ul>
+       <li> Genero </li> 
+        <ul>
+          <li>Femenino</li>
+          <li>Masculino</li>
+          <li>Indefinido</li>
+        </ul>
+       <li> Especie</li> 
+        <ul>
+          <li>Humano</li>
+          <li>Alien</li>
+          <li>Humanoide</li>
+          <li>Desconocido</li>
+          <li>Poopybutthole</li>
+          <li>Mytologico</li>
+          <li>Animal</li>
+          <li>Robot</li>
+          <li>Parasito</li>
+          <li>Otro</li>
+        </ul>
+      </ul>
+    </aside>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>

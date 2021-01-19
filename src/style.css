@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box 
+} 
+.body-1 {
+   background-image: url("fondodata2.jpg"); 
+   background-repeat: no-repeat;
+   background-size: cover;  
+ } 
+
+ .navbar-logo img {
+  width: 160px;
+  height: auto;
+ }
+ .navbar-logo img:hover {
+   filter: opacity(.5);
+ }
+
+ #icon-list {
+  color:white;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.search-input{
+  height: 50px;
+  width: 500px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+}
+
+
+button{
+  height: 50px; 
+  border-radius: 13px;
+}
+nav {
+  background-color: black;
+  padding: 15px;
+  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+aside {
+  width: 250px;
+  top:0;
+  bottom:0;
+  background: rgba(0,0,0,0.1)
+}
+aside ul{
+  position:relative;
+  list-style-type: none;
+}
+
+aside ul li {
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15em;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  padding: 10px 15px;
+  height: 50px;
+  transition: .5s ease;
+  
+}
+
+aside ul li:hover {
+  background: rgb(73, 182, 182);
+
+}
+
+aside ul ul {
+  position: absolute;
+  left: 100px;
+  width:250px;
+  top: 0;
+  display: none;
+}
+
+aside ul .dropdown {
+  position: relative;
+  display: initial;
+
+}
+
+aside ul .dropdown:hover ul {
+  display: initial;
+}
