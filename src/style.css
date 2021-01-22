@@ -1,92 +1,158 @@
-*{
-  box-sizing: border-box 
-} 
-.body-1 {
-   background-image: url("fondodata2.jpg"); 
-   background-repeat: no-repeat;
-   background-size: cover;  
- } 
-
- .navbar-logo img {
-  width: 160px;
-  height: auto;
- }
- .navbar-logo img:hover {
-   filter: opacity(.5);
- }
-
- #icon-list {
-  color:white;
-  font-size: 30px;
-  margin: 10px;
-}
-
-.search-input{
-  height: 50px;
-  width: 500px;
-  background-color: rgb(243, 243, 243);
-  border-radius: 10px;
-}
-
-
-button{
-  height: 50px; 
-  border-radius: 13px;
-}
-nav {
-  background-color: black;
-  padding: 15px;
-  display: inline-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-aside {
-  width: 250px;
-  top:0;
-  bottom:0;
-  background: rgba(0,0,0,0.1)
-}
-aside ul{
-  position:relative;
-  list-style-type: none;
-}
-
-aside ul li {
-  display: flex;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.15em;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: white;
-  padding: 10px 15px;
-  height: 50px;
-  transition: .5s ease;
+html {
+  font-family: 'Roboto', sans-serif;
+  }
   
-}
-
-aside ul li:hover {
-  background: rgb(73, 182, 182);
-
-}
-
-aside ul ul {
-  position: absolute;
-  left: 100px;
-  width:250px;
-  top: 0;
-  display: none;
-}
-
-aside ul .dropdown {
-  position: relative;
-  display: initial;
-
-}
-
-aside ul .dropdown:hover ul {
-  display: initial;
-}
+  *{
+    box-sizing: border-box 
+  } 
+  .body-1 {
+     background-image: url("fondorespons.jpg"); 
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;  
+     background-color: black;
+   } 
+  
+  
+  
+  
+   .navbar-logo img {
+    width: 160px;
+    height: auto;
+   }
+   .navbar-logo img:hover {
+     filter: opacity(.5);
+   }
+  
+  .search-input{
+    height: 50px;
+    width: 500px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+  }
+  
+  
+  button{
+    height: 50px; 
+    border-radius: 13px;
+  }
+  nav {
+    background-color: black;
+    padding: 15px;
+    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+  
+  }
+  
+  /* aside {
+    width: 250px;
+    top:0;
+    bottom:0;
+    background: rgba(0,0,0,0.1)
+  }
+  aside ul{
+    position:relative;
+    list-style-type: none;
+  }
+  
+  aside ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.15em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px 15px;
+    height: 50px;
+    transition: .5s ease;
+    
+  }
+  
+  aside ul li:hover {
+    background: rgb(73, 182, 182);
+  
+  }
+  
+  aside ul ul {
+    position: absolute;
+    left: 100px;
+    width:250px;
+    top: 0;
+    display: none;
+  }
+  
+  aside ul .dropdown {
+    position: relative;
+    display: initial;
+  
+  }
+  
+  aside ul .dropdown:hover ul {
+    display: initial;
+  } */
+   /* Dropdown */
+   .item ul, aside input[type="checkbox"]{
+    display: none;
+  }
+  #menu:checked ~ .item input:checked ~ ul{
+    display: block;
+  }
+  /*aside {
+    font-family: monospace;
+    color:aliceblue;
+    font-size: 20px;+*/
+  label:hover {
+    cursor: pointer;
+  }
+  
+  aside ul li:hover {
+    background: rgb(73, 182, 182);
+  }
+  
+  label {
+    width: 100%;
+    display: block;
+    z-index: 3;
+    position: relative;
+  }
+  aside {
+    width: 30%;
+    overflow-x: hidden;
+    margin-top: 10%;
+  }
+  #nav-icon{
+   font-size: 25px;
+   line-height: 50px;
+   padding-left: 1em;
+   color: white
+  }
+  aside ul, aside li, label{
+    line-height: 50px;
+    margin: 0px;
+    padding: 0 1em;
+    list-style: none;
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-weight: 100;
+    width: 100%;
+  }
+  .item ul{
+    padding: 0 0.25em ;
+  }
+  aside li a {
+    line-height: 50px;
+    margin: 0px;
+    padding: 0 1em;
+    list-style: none;
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-weight: 100;
+  
+  }

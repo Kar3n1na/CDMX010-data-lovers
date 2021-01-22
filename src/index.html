@@ -28,44 +28,48 @@
       <option value="value2">Z-A</option>
     </select>
 
-<!--     <div class="dropdown">
-      <span>Estado de vida</span>
-      <div class="dropdown-content">
-      <p>Vivo</p>
-      <p>Muerto</p>
-      </div>
-    </div> -->
-
+<!-- Menu tipo hamburgesa -->
     <aside>
-      <li> Categorias</li>      
-      <ul>
-       <li class="dropdown">Estado de Vida </li>  
+      <input type="checkbox" id="menu">
+      <label for="menu" id=nav-icon>&#9776; Categorias</label>
+<!-- elementos dentro del menu-->  
+     <div class="item">
+      <input type="checkbox" id="A">
+      <label for="A">Estado de Vida</label>
+      <!-- elementos dentro del estado de vida-->
+       <ul>
+         <li><a href="#">Vivo</a></li>
+         <li><a href="#">Muerto</a></li>
+       </ul>
+     </div>
+      <!-- elementos dentro del estado de genero-->
+     <div class= "item">
+       <input type="checkbox" id=B >
+       <label for="B">Género</label>
         <ul>
-          <li>Vivo</li>
-          <li>Muerto</li>
+          <li><a href="#">Femenino</a></li>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Desconocido</a></li>
         </ul>
-       <li> Genero </li> 
+     </div>
+<!-- elementos dentro del estado de especie -->
+     <div class= "item">
+       <input type="checkbox" id="C" >
+       <label for="C">Especie</label>
         <ul>
-          <li>Femenino</li>
-          <li>Masculino</li>
-          <li>Indefinido</li>
+          <li><a href="#">Humano</a></li>
+          <li><a href="#">Alien</a></li>
+          <li><a href="#">Robot</a></li>
+          <li><a href="#">Humanoide</a></li>
+          <li><a href="#">Parasito</a></li>
+          <li><a href="#">Desconocido</a></li>
         </ul>
-       <li> Especie</li> 
-        <ul>
-          <li>Humano</li>
-          <li>Alien</li>
-          <li>Humanoide</li>
-          <li>Desconocido</li>
-          <li>Poopybutthole</li>
-          <li>Mytologico</li>
-          <li>Animal</li>
-          <li>Robot</li>
-          <li>Parasito</li>
-          <li>Otro</li>
-        </ul>
-      </ul>
-    </aside>
+     </div>
+ </aside>
 
+    <div class="character">
+
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
