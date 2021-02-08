@@ -6,70 +6,118 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/8699ef02e6.js" crossorigin="anonymous"></script>
     
-  <nav>
+   <nav>
     <a class="navbar-logo" href="index.html">
       <img src="logo rickmorty.png">
     </a>
-    <div id="icon-list"> <i class="fas fa-list-ul"></i> </div>
-    
-      <div>
-        <input type="search" class="search-input" placeholder="Buscar...">
-        <button><i class="fas fa-search"></i></button>
-      </div>
-  </nav>
+      <input type="text" class="search-input" id="search" placeholder="Buscar...">
+      <!-- <button><i class="fas fa-search"></i></button> -->
+      <!-- Ordenar por-->
+  <div id="order">
+    <select name="order" id="select-order">
+      <option value="">Ordenar por</option>
+      <option value="orderAz">A-Z</option>
+      <option value="orderZa">Z-A</option>
+    </select>
+  </div>
+
+  </nav> 
   </head>
   <body class="body-1">
 
 <!--     <div id="root">
     </div> -->
-    <select name="select-order">
-      <option value="value0" selected>Ordenar por</option>
-      <option value="value1">A-Z</option>
-      <option value="value2">Z-A</option>
-    </select>
 
-<!-- Menu tipo hamburgesa -->
-    <aside>
-      <input type="checkbox" id="menu">
-      <label for="menu" id=nav-icon>&#9776; Categorias</label>
+
+
+  <!-- Menu tipo hamburgesa -->
+  <aside>
+    <label for="menu" id=nav-icon>&#9776; Categorias</label>
 <!-- elementos dentro del menu-->  
-     <div class="item">
-      <input type="checkbox" id="A">
-      <label for="A">Estado de Vida</label>
-      <!-- elementos dentro del estado de vida-->
-       <ul>
-         <li><a href="#">Vivo</a></li>
-         <li><a href="#">Muerto</a></li>
-       </ul>
-     </div>
-      <!-- elementos dentro del estado de genero-->
-     <div class= "item">
-       <input type="checkbox" id=B >
-       <label for="B">Género</label>
-        <ul>
-          <li><a href="#">Femenino</a></li>
-          <li><a href="#">Masculino</a></li>
-          <li><a href="#">Desconocido</a></li>
-        </ul>
-     </div>
-<!-- elementos dentro del estado de especie -->
-     <div class= "item">
-       <input type="checkbox" id="C" >
-       <label for="C">Especie</label>
-        <ul>
-          <li><a href="#">Humano</a></li>
-          <li><a href="#">Alien</a></li>
-          <li><a href="#">Robot</a></li>
-          <li><a href="#">Humanoide</a></li>
-          <li><a href="#">Parasito</a></li>
-          <li><a href="#">Desconocido</a></li>
-        </ul>
-     </div>
- </aside>
-
-    <div class="character">
-
+   <div class="item">
+    <button class="vida">Estado de Vida</button> 
+    <!-- elementos dentro del estado de vida-->
+     <ul>
+       <li> <div class="sub-item">
+         <input type="radio" id="alive" name="status" value="Alive">
+         <label for="A1">Vivo</label>
+       </div></li>
+       <li> <div class="sub-item">
+        <input type="radio" id="dead" name="status" value="Dead">
+        <label for="A2">Muerto</label>
+      </div></li>
+      <li> <div class="sub-item">
+        <input type="radio" id="unknown" name="status" value="unknown">
+        <label for="A3">Desconocido</label>
+      </div></li>
+     </ul>
     </div>
+    <!-- Opción filtro  de genero-->
+   <div class="item">
+     <button class="genero">Género</button>
+      <ul>
+    <!-- Opciones sub filtro-->
+        <li> <div class="sub-item">
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Femenino</label>
+        </div></li>
+        <li> <div class="sub-item">
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Masculino</label>
+        </div></li>
+        <li> <div class="sub-item">
+          <input type="radio" id="unknownGender" name="gender" value="unknown">
+          <label for="unknownDos">Desconocido</label>
+        </div></li>
+      </ul>
+   </div>
+<!-- elementos dentro del filtro de especie -->
+   <div class= "item">
+     <button class="species">Especie</button>
+      <ul>
+        <li> <div class="sub-item">
+          <input type="radio" id="human" name="specie" value="Human">
+          <label for="human">Humano</label>
+        </div></li>
+        <li> <div class="sub-item">
+          <input type="radio" id="alien" name="specie" value="Alien">
+          <label for="alien">Alien</label>
+        </div></li>
+        <li> <div class="sub-item">
+          <input type="radio" id="humanoid" name="specie" value="Humanoid">
+          <label for="humanoid">Humanoide</label>
+        </div></li>
+        <li> <div class="sub-item">
+          <input type="radio" id="animal" name="specie" value="Animal">
+          <label for="animal">Animal</label>
+        </div></li>
+        <li> <div class="sub-item">
+          <input type="radio" id="robot" name="specie" value="Robot">
+          <label for="robot">Robot</label>
+        </div></li>
+      </ul>
+   </div>
+</aside>
+
+
+Cartas de personajes-->
+<div class="flex-container"> 
+    <div class="character"> </div>
+  </div>   
+
+  <!-- <div class="specifications">
+    <p><img id="header" src="encabezado.png"></p>
+
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    
+    
+  </div> -->
+
     <script src="main.js" type="module"></script>
   </body>
 </html>

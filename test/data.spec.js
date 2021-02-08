@@ -1,4 +1,4 @@
-import { example, anotherExample } from '../src/data.js';
+import { example, anotherExample, filterBySpecies } from '../src/data.js';
 
 
 describe('example', () => {
@@ -12,7 +12,7 @@ describe('example', () => {
 });
 
 
-describe('anotherExample', () => {
+/* describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
@@ -20,4 +20,12 @@ describe('anotherExample', () => {
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
-});
+}); */
+
+describe.only ('el filtro funciona para especies',()=> {
+  it('El filtro devuelve humanos', () =>{
+    expect(filterBySpecies(personajes,"Human")).toEqual()
+
+  } )
+  
+})
